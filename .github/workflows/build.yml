@@ -2,6 +2,8 @@ name: Build Library
 
 on:
   push:
+    ignore-branches:
+      - main
 
 jobs:
   build:

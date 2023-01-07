@@ -5,6 +5,7 @@
 //  Created by So Nakamura on 2023/01/07.
 //  Copyright © 2023 So Nakamura. All rights reserved.
 //
+
 import Foundation
 
 struct RssDecoderInternal: Decoder {
@@ -53,7 +54,13 @@ struct RssKeyedDecodingContainer<Key> : KeyedDecodingContainerProtocol where Key
   }
 
   func decode(_ type: String.Type, forKey key: Key) throws -> String {
-    decoder.element.children.first(where: { $0.key == key.stringValue })?.value ?? ""
+    guard let value = decoder.element.children.first(where: { $0.key == key.stringValue })?.value else {
+      throw DecodingError.typeMismatch(
+        type.self,
+        .init(codingPath: [key], debugDescription: "Key \(key.stringValue) was not found or not String.")
+      )
+    }
+    return value
   }
 
   func decode(_ type: Double.Type, forKey key: Key) throws -> Double {
@@ -111,11 +118,16 @@ struct RssKeyedDecodingContainer<Key> : KeyedDecodingContainerProtocol where Key
         throw DecodingError.keyNotFound(key, .init(codingPath: codingPath, debugDescription: "Not found."))
       }
       guard let date = ISO8601DateFormatter().date(from: rawValue) else {
-        throw DecodingError.dataCorrupted(.init(codingPath: codingPath, debugDescription: "Date value \(rawValue) had unexpected format."))
+        throw DecodingError.dataCorrupted(
+          .init(codingPath: codingPath, debugDescription: "Date value \(rawValue) had unsupported format. Expected format: ISO8601")
+        )
       }
       return date as! T
     default:
-      fatalError("Not implemented type: \(type)")
+      throw DecodingError.typeMismatch(
+        type.self,
+        .init(codingPath: codingPath, debugDescription: "Type \(type) is not supported yet.")
+      )
     }
   }
 
