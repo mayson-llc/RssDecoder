@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns="http://purl.org/rss/1.0/"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xml:lang="en">
+  <channel rdf:about="https://example.com/index.rdf">
+    <title>Mocked Rss Contents</title>
+    <link>https://example.com/</link>
+    <description>Latest News</description>
+    <dc:language>en</dc:language>
+    <items>
+      <rdf:Seq>
+        <rdf:li rdf:resource="https://example.com/_00003.html" />
+        <rdf:li rdf:resource="https://example.com/_00002.html" />
+        <rdf:li rdf:resource="https://example.com/_00069.html" />
+        <rdf:li rdf:resource="https://example.com/_00068.html" />
+        <rdf:li rdf:resource="https://example.com/_00067.html" />
+        <rdf:li rdf:resource="https://example.com/_00066.html" />
+        <rdf:li rdf:resource="https://example.com/_00065.html" />
+        <rdf:li rdf:resource="https://example.com/_00064.html" />
+        <rdf:li rdf:resource="https://example.com/_00062.html" />
+        <rdf:li rdf:resource="https://example.com/_00063.html" />
+        <rdf:li rdf:resource="https://example.com/_00061.html" />
+        <rdf:li rdf:resource="https://example.com/_00060.html" />
+        <rdf:li rdf:resource="https://example.com/_00059.html" />
+        <rdf:li rdf:resource="https://example.com/_00058.html" />
+        <rdf:li rdf:resource="https://example.com/_00056.html" />
+        <rdf:li rdf:resource="https://example.com/_00057.html" />
+        <rdf:li rdf:resource="https://example.com/_00055.html" />
+      </rdf:Seq>
+    </items>
+  </channel>
+  <item rdf:about="https://example.com/_00003.html">
+    <title>Video Message</title>
+    <link>https://example.com/_00003.html</link>
+    <dc:date>2023-01-04T14:00:00+09:00</dc:date>
+  </item>
+  <item rdf:about="https://example.com/_00002.html">
+    <title>New Year’s Resolution</title>
+    <link>https://example.com/_00002.html</link>
+    <dc:date>2023-01-01T00:00:00+09:00</dc:date>
+  </item>
+  <item rdf:about="https://example.com/_00069.html">
+    <title>Giving a Letter of Assignment</title>
+    <link>https://example.com/_00069.html</link>
+    <description><![CDATA[Foo Bar]]></description>
+    <dc:date>2022-12-28T14:30:00+09:00</dc:date>
+  </item>
+  <item rdf:about="https://example.com/_00068.html">
+    <title>Meeting on the Heavy Snow</title>
+    <link>https://example.com/_00068.html</link>
+    <dc:date>2022-12-28T14:00:00+09:00</dc:date>
+  </item>
+  <item rdf:about="https://example.com/_00067.html">
+    <title>Giving a Letter</title>
+    <link>https://example.com/_00067.html</link>
+    <dc:date>2022-12-27T19:05:00+09:00</dc:date>
+  </item>
+  <item rdf:about="https://example.com/_00066.html">
+    <title>Meeting of the Council</title>
+    <link>https://example.com/_00066.html</link>
+    <dc:date>2022-12-27T14:15:00+09:00</dc:date>
+  </item>
+  <item rdf:about="https://example.com/_00065.html">
+    <title>Supply Food and Agriculture</title>
+    <link>https://example.com/_00065.html</link>
+    <dc:date>2022-12-27T13:30:00+09:00</dc:date>
+  </item>
+  <item rdf:about="https://example.com/_00064.html">
+    <title>Research Institute</title>
+    <link>https://example.com/_00064.html</link>
+    <dc:date>2022-12-26T23:00:00+09:00</dc:date>
+  </item>
+  <item rdf:about="https://example.com/_00062.html">
+    <title>Ceremony</title>
+    <link>https://example.com/_00062.html</link>
+    <dc:date>2022-12-26T21:30:00+09:00</dc:date>
+  </item>
+  <item rdf:about="https://example.com/_00063.html">
+    <title>Proposal</title>
+    <link>https://example.com/_00063.html</link>
+    <dc:date>2022-12-26T18:15:00+09:00</dc:date>
+  </item>
+  <item rdf:about="https://example.com/_00061.html">
+    <title>Meeting</title>
+    <link>https://example.com/_00061.html</link>
+    <dc:date>2022-12-26T18:00:00+09:00</dc:date>
+  </item>
+  <item rdf:about="https://example.com/_00060.html">
+    <title>Small Group Talk</title>
+    <link>https://example.com/_00060.html</link>
+    <dc:date>2022-12-26T16:00:00+09:00</dc:date>
+  </item>
+  <item rdf:about="https://example.com/_00059.html">
+    <title>Call from the Foreign Ministers</title>
+    <link>https://example.com/_00059.html</link>
+    <dc:date>2022-12-23T21:30:00+09:00</dc:date>
+  </item>
+  <item rdf:about="https://example.com/_00058.html">
+    <title>Headquarters</title>
+    <link>https://example.com/_00058.html</link>
+    <dc:date>2022-12-23T21:00:00+09:00</dc:date>
+  </item>
+  <item rdf:about="https://example.com/_00056.html">
+    <title>Strategic Headquarters</title>
+    <link>https://example.com/_00056.html</link>
+    <dc:date>2022-12-23T20:30:00+09:00</dc:date>
+  </item>
+  <item rdf:about="https://example.com/_00057.html">
+    <title>2022 Special Seminar</title>
+    <link>https://example.com/_00057.html</link>
+    <dc:date>2022-12-23T19:30:00+09:00</dc:date>
+  </item>
+  <item rdf:about="https://example.com/_00055.html">
+    <title>Presentation of Snow Crabs</title>
+    <dc:date>2022-12-23T16:00:00+09:00</dc:date>
+  </item>
+</rdf:RDF>
