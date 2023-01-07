@@ -114,6 +114,7 @@
   </item>
   <item rdf:about="https://example.com/_00055.html">
     <title>Presentation of Snow Crabs</title>
+    <link>https://example.com/_00055.html</link>
     <dc:date>2022-12-23T16:00:00+09:00</dc:date>
   </item>
 </rdf:RDF>

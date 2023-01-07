@@ -27,8 +27,10 @@ final class RssDecoderTests: XCTestCase {
       .tryMap { try fixtureData(for: $0) }
       .tryMap { try RssDecoder().decodeToArray(of: Feed.self, from: $0) }
       .eraseToAnyPublisher()
-      .sink { _ in
-        // no-op
+      .sink { completion in
+        if case .failure(let error) = completion {
+          XCTFail("\(error)")
+        }
       } receiveValue: { data in
         XCTAssertEqual(data.isEmpty, false)
         expectation.fulfill()
