@@ -10,7 +10,11 @@ import Foundation
 
 public struct RssDecoder {
 
-  public var rootElementNameForFeed: String = "item"
+  public var rootElementNameForFeed: String
+
+  public init(rootElementNameForFeed: String = "item") {
+    self.rootElementNameForFeed = rootElementNameForFeed
+  }
 
   public func decodeToArray<T>(of type: T.Type, from: Data) throws -> [T] where T : Decodable {
     let parser = RssParser()
